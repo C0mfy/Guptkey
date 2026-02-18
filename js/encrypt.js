@@ -5,12 +5,12 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebas
 import { getFirestore, doc, setDoc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBwyg05lakCmtbTbO427gzGVBq7z7emkxI",
-  authDomain: "guptkey.firebaseapp.com",
-  projectId: "guptkey",
-  storageBucket: "guptkey.firebasestorage.app",
-  messagingSenderId: "21263271016",
-  appId: "1:21263271016:web:f50ec8fb5575e2a1a8e7dd"
+  apiKey: "HIDDEN",
+  authDomain: "HIDDEN",
+  projectId: "HIDDEN",
+  storageBucket: "HIDDEN",
+  messagingSenderId: "HIDDEN",
+  appId: "HIDDEN"
 };
 
 const app = initializeApp(firebaseConfig);
