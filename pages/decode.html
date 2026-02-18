@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guptkey – Decode Message</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/encode-decode.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <img src="../assets/logo.png" alt="Guptkey" />
+        <span>Guptkey</span>
+      </a>
+      <nav class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </header>
+
+  <main class="ed-main">
+    <div class="ed-card">
+      <div class="ed-logo">
+        <img src="../assets/logo.png" alt="Guptkey" />
+        <h1>Guptkey</h1>
+        <p class="ed-tagline">DECODE YOUR PRIVACY, ENCRYPT YOUR VOICE</p>
+      </div>
+
+      <div class="ed-form" id="decodeForm">
+        <h2 class="section-title">🔓 Decode a Message</h2>
+        <textarea id="encodedInput" placeholder="Paste the encoded message here..." rows="4"></textarea>
+        <input type="text" id="keyInput" placeholder="Enter the security key..." class="key-input" />
+        <button class="submit-btn decode-btn" id="decodeBtn">Decrypt Message</button>
+        <p class="error-msg" id="errorMsg" style="display:none;"></p>
+      </div>
+
+      <div class="ed-result" id="decodeResult" style="display:none;">
+        <h2 class="section-title">✅ Message Decrypted!</h2>
+        <div class="result-box">
+          <div class="result-row">
+            <label>Decoded Message:</label>
+            <div class="result-value decoded-value" id="decodedOutput"></div>
+          </div>
+        </div>
+        <div class="caution-box expired">
+          <span class="caution-icon">⚠️</span>
+          <p><strong>Caution:</strong> This message is now expired. For security, do not share it further.</p>
+        </div>
+        <button class="reset-btn" id="resetDecodeBtn">Decode Another Message</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="../assets/logo.png" alt="Guptkey" />
+        <span>Guptkey</span>
+      </div>
+      <p class="footer-tagline">Decode Your Privacy, Encrypt Your Voice</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Guptkey. All rights reserved.</p>
+    </div>
+  </footer>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+   <script type="module" src="../js/encrypt.js"></script>
+   <script src="../js/main.js"></script>
+</body>
+</html>

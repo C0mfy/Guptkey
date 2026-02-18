@@ -1,0 +1,85 @@
+.home-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+}
+
+.hero { text-align: center; margin-bottom: 5rem; }
+.hero-text { margin-bottom: 3rem; }
+.hero-text h1 {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+.hero-text p { font-size: 1.1rem; max-width: 540px; margin: 0 auto; color: #666; }
+
+.hero-cards { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
+
+.action-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  width: 280px;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  cursor: pointer;
+}
+.action-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--orange);
+}
+.card-icon { font-size: 2.5rem; }
+.action-card h2 { font-size: 1.5rem; }
+.action-card p { font-size: 0.9rem; color: #777; line-height: 1.6; }
+.card-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background: var(--orange);
+  color: var(--white);
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.6rem;
+  border-radius: 50px;
+  transition: background var(--transition), transform var(--transition);
+}
+.action-card:hover .card-btn { background: #d4620a; transform: scale(1.04); }
+.encode-card { border-top: 4px solid var(--orange); }
+.decode-card { border-top: 4px solid var(--dark); }
+
+.how-it-works { text-align: center; }
+.how-it-works h2 { font-size: 2rem; margin-bottom: 2.5rem; }
+.steps { display: flex; align-items: flex-start; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+.step {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem 1.5rem;
+  max-width: 220px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.step-num {
+  font-family: 'Syne', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--orange);
+  opacity: 0.25;
+  margin-bottom: 0.5rem;
+}
+.step h3 { font-size: 1rem; margin-bottom: 0.5rem; }
+.step p { font-size: 0.85rem; color: #888; }
+.step-arrow { font-size: 1.8rem; color: var(--orange); align-self: center; font-weight: 700; }
+
+@media (max-width: 640px) {
+  .step-arrow { display: none; }
+  .hero-cards { flex-direction: column; align-items: center; }
+}
+

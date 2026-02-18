@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guptkey – Contact Us</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/about-contact.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <img src="../assets/logo.png" alt="Guptkey" />
+        <span>Guptkey</span>
+      </a>
+      <nav class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact Us</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </header>
+
+  <main class="contact-main">
+    <div class="contact-wrapper">
+      <div class="contact-form-side">
+        <h1>Contact <span class="highlight">Us</span></h1>
+        <p class="contact-sub">Have a question, suggestion, or feedback? We'd love to hear from you.</p>
+        <div class="contact-form" id="contactForm">
+          <div class="input-group">
+            <span class="input-icon">👤</span>
+            <input type="text" id="contactName" placeholder="Your Name" />
+          </div>
+          <div class="input-group">
+            <span class="input-icon">✉️</span>
+            <input type="email" id="contactEmail" placeholder="Your Email" />
+          </div>
+          <div class="input-group textarea-group">
+            <textarea id="contactMessage" placeholder="Your Message..." rows="5"></textarea>
+          </div>
+          <button class="contact-submit-btn" id="contactSubmit">Send Message 🚀</button>
+          <p class="success-msg" id="successMsg" style="display:none;">✅ Message sent! We'll get back to you soon.</p>
+        </div>
+      </div>
+
+      <div class="contact-info-side">
+        <div class="contact-illustration">📬</div>
+        <h3>Reach Out Anytime</h3>
+        <p>We're here to help. Whether it's a bug, a feature request, or just a hello — drop us a message.</p>
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <span>📧</span><span>support@guptkey.com</span>
+          </div>
+          <div class="contact-detail-item">
+            <span>🌐</span><span>www.guptkey.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="../assets/logo.png" alt="Guptkey" />
+        <span>Guptkey</span>
+      </div>
+      <p class="footer-tagline">Decode Your Privacy, Encrypt Your Voice</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Guptkey. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/contact.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
