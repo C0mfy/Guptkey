@@ -162,3 +162,80 @@ a { text-decoration: none; color: inherit; }
   .nav-links { display: none; }
   .hamburger { display: flex; }
 }
+/* ============================================
+   DARK MODE
+   ============================================ */
+body.dark {
+  background: #0F0F0F;
+  color: #E0E0E0;
+}
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4 { color: #F0F0F0; }
+
+body.dark p { color: #AAAAAA; }
+
+/* Navbar */
+body.dark .navbar {
+  background: #1A1A1A;
+  border-bottom-color: #2A2A2A;
+}
+body.dark .nav-logo span { color: #F0F0F0; }
+body.dark .nav-links a { color: #AAAAAA; }
+body.dark .nav-links a:hover,
+body.dark .nav-links a.active { color: var(--orange); }
+body.dark .hamburger span { background: #F0F0F0; }
+body.dark .mobile-menu {
+  background: #1A1A1A;
+  border-top-color: #2A2A2A;
+}
+body.dark .mobile-menu a { color: #AAAAAA; border-bottom-color: #2A2A2A; }
+
+/* Cards */
+body.dark .action-card,
+body.dark .step,
+body.dark .about-card,
+body.dark .ed-card,
+body.dark .result-box {
+  background: #1A1A1A;
+  border-color: #2A2A2A;
+}
+
+/* Inputs */
+body.dark textarea,
+body.dark .key-input,
+body.dark .input-group {
+  background: #1A1A1A;
+  border-color: #2A2A2A;
+  color: #E0E0E0;
+}
+body.dark .input-group input { color: #E0E0E0; }
+body.dark .result-value {
+  background: #111;
+  border-color: #2A2A2A;
+  color: #E0E0E0;
+}
+
+/* Contact info side already dark — keep as is */
+body.dark .about-story { background: #1A1A1A; }
+
+/* Footer stays dark already */
+
+/* Dark toggle button */
+.dark-toggle {
+  background: none;
+  border: 1.5px solid var(--border);
+  border-radius: 50px;
+  padding: 0.3rem 0.7rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color var(--transition), background var(--transition);
+  margin-right: 0.5rem;
+}
+.dark-toggle:hover { border-color: var(--orange); background: #FFF8F0; }
+body.dark .dark-toggle {
+  border-color: #444;
+  background: #1A1A1A;
+}
+body.dark .dark-toggle:hover { border-color: var(--orange); }

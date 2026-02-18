@@ -18,3 +18,22 @@ document.querySelectorAll('.nav-links a, .mobile-menu a').forEach(link => {
     link.classList.add('active');
   }
 });
+// ============================================
+// DARK MODE
+// ============================================
+const darkToggle = document.getElementById('darkToggle');
+
+// Load saved preference
+if (localStorage.getItem('darkMode') === 'true') {
+  document.body.classList.add('dark');
+  if (darkToggle) darkToggle.textContent = '☀️';
+}
+
+if (darkToggle) {
+  darkToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    const isDark = document.body.classList.contains('dark');
+    darkToggle.textContent = isDark ? '☀️' : '🌙';
+    localStorage.setItem('darkMode', isDark);
+  });
+}
