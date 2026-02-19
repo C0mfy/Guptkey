@@ -5,14 +5,13 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebas
 import { getFirestore, doc, setDoc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "HIDDEN",
-  authDomain: "HIDDEN",
-  projectId: "HIDDEN",
-  storageBucket: "HIDDEN",
-  messagingSenderId: "HIDDEN",
-  appId: "HIDDEN"
+  apiKey: "AIzaSyBwyg05lakCmtbTbO427gzGVBq7z7emkxI",
+  authDomain: "guptkey.firebaseapp.com",
+  projectId: "guptkey",
+  storageBucket: "guptkey.firebasestorage.app",
+  messagingSenderId: "21263271016",
+  appId: "1:21263271016:web:f50ec8fb5575e2a1a8e7dd"
 };
-
 const app = initializeApp(firebaseConfig);
 const db  = getFirestore(app);
 
@@ -193,16 +192,14 @@ function copyText(elementId, btn) {
   const text = document.getElementById(elementId).textContent;
   navigator.clipboard.writeText(text).then(() => {
     const original = btn.textContent;
-    btn.textContent       = '✅ Copied!';
-    btn.style.background  = '#27ae60';
-    btn.style.color       = '#fff';
-    btn.style.borderColor = '#27ae60';
-    setTimeout(() => {
-      btn.textContent       = original;
-      btn.style.background  = '';
-      btn.style.color       = '';
-      btn.style.borderColor = '';
-    }, 2000);
+   btn.textContent       = 'Copied';
+   btn.style.background  = '';
+   btn.style.color       = '#E8710A';
+   btn.style.borderColor = '';
+   setTimeout(() => {
+   btn.textContent       = original;
+   btn.style.color       = '';
+}, 2000);
   });
 }
 
