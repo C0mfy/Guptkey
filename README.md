@@ -98,11 +98,11 @@ This project is open source and available for educational purposes.
 
 ## Authors
 
-- C0mfy - Initial work - [GitHub](https://github.com/C0mfy)
+- C0mfy - Initial work - [@c0mfy_](https://github.com/C0mfy)
 
 ## Contact
 
-For questions or feedback, please visit my GitHub repository: [github.com/C0mfy](https://github.com/C0mfy)
+For questions or feedback, please open an issue on GitHub.
 
 ---
 
