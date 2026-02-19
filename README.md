@@ -96,9 +96,13 @@ Have an encrypted message? Use the decoding tool to decrypt it and read the orig
 
 This project is open source and available for educational purposes.
 
+## Authors
+
+- C0mfy - Initial work - [GitHub](https://github.com/C0mfy)
+
 ## Contact
 
-For questions, feedback, or support, please use the Contact Us page in the application.
+For questions or feedback, please visit my GitHub repository: [github.com/C0mfy](https://github.com/C0mfy)
 
 ---
 
