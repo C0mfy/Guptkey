@@ -125,15 +125,15 @@ textarea:focus {
   display: flex;
   align-items: flex-start;
   gap: 0.6rem;
-  background: #FFF8F0;
-  border: 1px solid #F59234;
+  background: transparent;
+  border: 1px solid #E8710A;
   border-radius: var(--radius-sm);
   padding: 0.9rem 1rem;
   margin-bottom: 1.25rem;
 }
 .caution-box.expired { background: #FFF0F0; border-color: #E85A4F; }
 .caution-icon { font-size: 1.1rem; }
-.caution-box p { font-size: 0.85rem; color: #555; }
+.caution-box p { font-size: 0.85rem;  color: var(--mid); }
 
 .reset-btn {
   width: 100%;
